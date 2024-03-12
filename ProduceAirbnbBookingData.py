@@ -38,7 +38,7 @@ def lambda_handler(event, context):
     
     # Send booking data to SQS
     queue_url = os.environ['SQS_QUEUE_URL']  # Retrieve SQS queue URL from environment variable
-    
+    print ("Queue URL: ",queue_url)
     for booking_record in booking_data:
         # Send each booking record as a message to SQS
         response = sqs.send_message(
