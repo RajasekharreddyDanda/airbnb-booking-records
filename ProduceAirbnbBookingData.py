@@ -5,6 +5,7 @@ import datetime
 import os
 import boto3
 
+# make sure to create env variable NUM_RECORDS and SQS_QUEUE_UR 
 # Initialize SQS client
 sqs = boto3.client('sqs')
 
