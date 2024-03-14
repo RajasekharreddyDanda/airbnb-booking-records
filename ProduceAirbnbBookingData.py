@@ -6,6 +6,7 @@ import os
 import boto3
 
 # make sure to create env variable NUM_RECORDS and SQS_QUEUE_UR 
+# this scritp generates the airbnd data in realtime
 # Initialize SQS client
 sqs = boto3.client('sqs')
 
